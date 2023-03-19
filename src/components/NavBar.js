@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 
 //temp
+// temp2
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
