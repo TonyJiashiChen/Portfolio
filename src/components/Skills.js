@@ -1,9 +1,10 @@
 import { Container, Col, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import python from "../assets/img/python.png";
+import react from "../assets/img/react.png";
+import node from "../assets/img/node.png";
+import aws from "../assets/img/cloud.png";
 import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
@@ -44,23 +45,19 @@ export const Skills = () => {
                 className="skill-slider"
               >
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
+                  <img src={react} alt="Image" />
+                  <h5>React</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
+                  <img src={node} alt="Image" />
                   <h5>Nodejs</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="Image" />
-                  <h5>Sql</h5>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={aws} alt="Image" />
                   <h5>AWS</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
+                  <img src={python} alt="Image" />
                   <h5>Python</h5>
                 </div>
               </Carousel>
