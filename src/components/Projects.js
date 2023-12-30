@@ -1,7 +1,7 @@
 import { Container, Col, Row, Nav, Tab } from "react-bootstrap";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/mga.png";
+import projImg2 from "../assets/img/metapath.png";
+import projImg3 from "../assets/img/accessibility.png";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -10,34 +10,28 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Web content editor at MGA",
+      description: "Migrating the MGA website from WordPress to MSL",
       imgUrl: projImg1,
+      externalUrl: "https://mga.monash.edu/",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Software developer at SWFT blockchain",
+      description: `Developed MetaPath, a decentralized aggregator for NFT and GameFi modules.
+      Integrated third-party SDKs and endpoints.
+      Designed and implemented back-end logic and database update mechanism.
+      Utilized Node.js, KOA, MySQL, Redis, web sockets, and GitLab`,
       imgUrl: projImg2,
+      externalUrl: "https://paths.finance/#/swap?source=path",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Monash Summer Scholarship",
+      description: `Developed an machine learning based Android app that converts screen recorded videos of user actions into mobile
+      phone shortcuts using Python v2s and Flask for the backend and Android Studio for the frontend
+      Report weekly progress to supervisor, collaborated with a team of fellow scholars to design and implement the app,
+      which earned recognition for its innovative use of technology`,
       imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      externalUrl: "https://github.com/TonyJiashiChen/NewAccessibilityService",
     },
   ];
   return (
@@ -52,49 +46,16 @@ export const Projects = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  \<h2>Projects</h2>
-                  <p>this are my projects</p>
+                  <h2>Work/Project Experience</h2>
+                  <p></p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Nav
-                      variant="pills"
-                      className="nav-pills mb-5 justify-content-center align-items-center"
-                      id="pills-tab"
-                    >
-                      <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                      </Nav.Item>
-                    </Nav>
                     <Tab.Content>
-                      <Tab.Pane eventKey="first">
+                      <Tab.Pane eventKey="first" className="custom-tab-pane">
                         <Row>
                           {projects.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="section">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

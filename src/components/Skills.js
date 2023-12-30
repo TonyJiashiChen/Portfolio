@@ -34,11 +34,8 @@ export const Skills = () => {
         <Row>
           <Col>
             <div className="skill-bx">
-              <h2>Skills</h2>
-              <p>
-                this is my skill list:Nodejs, Sql, AWS, Python, Mobile app
-                <br></br>and more .......
-              </p>
+              <h2>Technical Skills</h2>
+              <p></p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
