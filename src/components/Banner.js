@@ -47,6 +47,10 @@ export const Banner = () => {
     }
   };
 
+  const redirectToLinkedIn = () => {
+    window.open("https://www.linkedin.com/in/tonychen0721/", "_blank");
+  };
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -74,7 +78,7 @@ export const Banner = () => {
                     which will allow me to keep developing and exploring new
                     technologies.
                   </p>
-                  <button onClick={() => console.log("connect clicked")}>
+                  <button onClick={redirectToLinkedIn}>
                     Let's connect <ArrowRightCircle size={25} />
                   </button>
                 </div>

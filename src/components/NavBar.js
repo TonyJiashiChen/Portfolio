@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../assets/img/tjc-nobg.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
+import navIcon2 from "../assets/img/twitter.png";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 
 export const NavBar = () => {
@@ -68,17 +68,28 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/in/tonychen0721/"
+                target="_blank"
+              >
                 <img src={navIcon1} alt="" />
               </a>
-              <a href="#">
+              <a href="https://twitter.com/chenjiashi1" target="_blank">
                 <img src={navIcon2} alt="" />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/tinycjs/" target="_blank">
                 <img src={navIcon3} alt="" />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
+            <button
+              className="vvd"
+              onClick={() => {
+                window.open(
+                  "https://www.linkedin.com/in/tonychen0721/",
+                  "_blank"
+                );
+              }}
+            >
               <span>Let's connect</span>
             </button>
           </span>
