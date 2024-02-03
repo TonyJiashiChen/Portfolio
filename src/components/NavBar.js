@@ -4,6 +4,7 @@ import logo from "../assets/img/tjc-nobg.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/twitter.png";
 import navIcon3 from "../assets/img/nav-icon3.svg";
+import navIcon4 from "../assets/img/github-mark-white.svg";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -73,6 +74,9 @@ export const NavBar = () => {
                 target="_blank"
               >
                 <img src={navIcon1} alt="" />
+              </a>
+              <a href="https://github.com/TonyJiashiChen" target="_blank">
+                <img src={navIcon4} alt="" />
               </a>
               <a href="https://twitter.com/chenjiashi1" target="_blank">
                 <img src={navIcon2} alt="" />
