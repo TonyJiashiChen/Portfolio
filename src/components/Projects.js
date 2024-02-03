@@ -10,7 +10,7 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
-      title: "Web content editor at MGA",
+      title: "Web developer at the MGA",
       description: "Migrating the MGA website from WordPress to MSL",
       imgUrl: projImg1,
       externalUrl: "https://mga.monash.edu/",
